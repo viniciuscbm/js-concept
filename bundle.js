@@ -6,17 +6,26 @@ function _defineProperties(target, props) { for (var i = 0; i < props.length; i+
 
 function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
 
-alert('teste');
+var Car = /*#__PURE__*/function () {
+  function Car() {
+    _classCallCheck(this, Car);
 
-var Test = /*#__PURE__*/function () {
-  function Test() {
-    _classCallCheck(this, Test);
+    this.vehicles = [];
   }
 
-  _createClass(Test, [{
-    key: "metodo",
-    value: function metodo() {}
+  _createClass(Car, [{
+    key: "add",
+    value: function add() {
+      this.vehicles.push('BMW');
+      console.log(this.vehicles);
+    }
   }]);
 
-  return Test;
+  return Car;
 }();
+
+var MyCars = new Car();
+
+document.getElementById('newcar').onclick = function () {
+  MyCars.add();
+};
