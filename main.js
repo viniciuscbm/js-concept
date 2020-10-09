@@ -1,16 +1,3 @@
-class Car {
-  constructor() {
-    this.vehicles = [];
-  }
-
-  add(){
-    this.vehicles.push('BMW');
-    console.log(this.vehicles);
-  }
-}
-
-const MyCars = new Car();
-
-document.getElementById('newcar').onclick = function() {
-  MyCars.add();
-}
+// 1 - Const
+// 2 - Let
+// 3 - Escope
