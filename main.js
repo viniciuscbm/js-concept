@@ -1,5 +1,4 @@
-function sum(a, b) {
-  return a + b
-}
+const name = "Vinicius"
+const age = "28"
 
-console.log(sum(2, 2))
+console.log("Meu nome é " + name + " e eu tenho " + age + " anos.")

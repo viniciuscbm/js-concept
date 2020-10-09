@@ -1,7 +1,5 @@
 "use strict";
 
-function sum(a, b) {
-  return a + b;
-}
-
-console.log(sum(2, 2));
+var name = "Vinicius";
+var age = "28";
+console.log("Meu nome é " + name + " e eu tenho " + age + " anos.");
