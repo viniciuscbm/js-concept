@@ -1,7 +1,5 @@
-const arr = [1, 2, 3, 5, 6, 7]
+function sum(a, b) {
+  return a + b
+}
 
-const newArr = arr.map(function(item) {
-  return item * 2
- })
-
- console.log (newArr)
+console.log(sum(2, 2))
