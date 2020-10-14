@@ -1,22 +1,47 @@
 "use strict";
 
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+var list = [{
+  id: 1,
+  name: 'João',
+  age: 18
+}, {
+  id: 2,
+  name: 'Marcos',
+  age: 45
+}, {
+  id: 3,
+  name: 'Maria',
+  age: 12
+}, {
+  id: 4,
+  name: 'Roberto',
+  age: 56
+}, {
+  id: 5,
+  name: 'Garibalda',
+  age: 23
+}];
+/**
+ * Map
+ *
+ * Mapear a lista para retornar a mensagem: `Olá, meu nome é ${name} e tenho ${age}`
+ */
+// console.log(list.map((people) => (`Olá, meu nome é ${people.name} e tenho ${people.age}.`)))
+// console.log(list.map(({ name, age }) => (`Olá, meu nome é ${name} e tenho ${age}`)))
 
-function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+/**
+ * Filter
+ *
+ * Filtrar todas as pessoas com mais de 20 anos
+ */
+// console.log(list.filter(pessoa => (pessoa.age > 20)))
 
-function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
-
-alert('teste');
-
-var Test = /*#__PURE__*/function () {
-  function Test() {
-    _classCallCheck(this, Test);
-  }
-
-  _createClass(Test, [{
-    key: "metodo",
-    value: function metodo() {}
-  }]);
-
-  return Test;
-}();
+/**
+ * Reduce
+ *
+ * Retornar a média de idade das pessoas em 2023
+ */
+//  const total = list.map(p => p.age + 3)
+//   .reduce( (a, b) => (a + b), 0)
+//  const avg = total/list.length
+//  console.log(avg)
